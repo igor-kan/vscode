@@ -1,0 +1,25 @@
+{
+    "name": "gemini-assistant",
+    "displayName": "Gemini Assistant",
+    "description": "A Cursor-like AI assistant for VSCode.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "publisher": "gemini",
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onCommand:gemini-assistant.helloWorld"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "gemini-assistant.helloWorld",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.85.0"
+    }
+}
